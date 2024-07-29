@@ -1,0 +1,164 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: purple;
+    color: white;
+}
+.navbar h1{
+    margin-left: 20px;
+    cursor: pointer;
+    /* animation: dropDown 1s linear; */
+}
+    
+
+.menu li:hover{
+    margin-right: 15px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1.5px solid white;
+
+}
+@keyframes backcolor {
+    0%{
+       background-color: #fff;
+    }
+    10%{
+        background-color:plum;
+        color: white;
+    }
+    20%{
+        background-color: antiquewhite;
+    }
+    50%{
+        background-color: purple;
+        color: white;
+    }
+}
+    
+    
+    
+
+.navbar h1 span:hover{
+        padding: 7px;
+        background-color: #fff;
+        color: purple;
+        border-radius: 20% 0 50% 0;
+
+
+}
+.navbar h1 span{
+    padding: 7px;
+    background-color: #fff;
+    color: purple;
+    border-radius: 0% 0 50% 0;
+    transition: all 0.2s ease;
+    animation: backcolor 10s infinite;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.menu li a{
+    color: #fff;
+    margin-right: 12px;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    font-family: sans-serif;
+    /* position:absolute; */
+}
+.image{
+    /* position: relative; */
+    left: 50%;
+}
+.image img{
+    width: 100%;
+}
+.content{
+    /* position: relative; */
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents{
+    width: 80%;
+    text-align: center;
+}
+.contents h2{
+    color: purple;
+    font-size: 32px;
+    margin-bottom: 10px;
+    animation: dropDown 1s;
+}
+@keyframes dropDown {
+    from{
+        transform: translateY(-100vh);
+    }to{
+        transform: translateY(0);
+    }
+}
+.contents p{
+    animation: slide 1s;
+}
+@keyframes slide {
+    from{
+        transform: translateX(100vw);
+    }to{
+        transform: translateX(0);
+    }
+    
+}
+button{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: purple;
+    border: none;
+}
+button:hover{
+    /* background-color: rgb(78, 29, 78); */
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+button a{
+    color: #fff;
+}
+.ham{
+    display: none;
+}
+.line{
+    display: none;
+}
+
+/* Styling gor the mile view */
+@media (max-width:780px){
+    .ham{
+        display: flex;
+        font-size: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    
+
+}

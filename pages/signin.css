@@ -1,0 +1,52 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+}
+.form{
+    background-color: rgb(246, 223, 254);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.form p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.inputs input{
+    height: 24px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+    width: 90%;
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 1px;
+}
+.icons img:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease;
+}
+.btn{
+    width: 70%;
+    color: white;
+    margin-top: -5px;
+}
+/* mobile design  */
+@media (max-width:780px){
+ .login-form{
+    /* height: 80%;
+    width: 60%; */
+    transform: scale(1.4);
+ }
+}
